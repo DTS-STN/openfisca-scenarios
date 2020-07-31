@@ -2,7 +2,7 @@
 
 A simple form for experimenting with the Openfisca Web API hosted by [DTS-STN](https://openfiscacanada-main.dev.dts-stn.com/). This Openfisca API is using the New Zealand country package. 
 
-You can explore parameters, variables, entities and scenarios at http://rules.nz.
+You can explore parameters, variables, entities and scenarios at http://www.rules.nz.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
