@@ -1,13 +1,18 @@
 import React, {useEffect} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {useTranslation} from "react-i18next";
 import {useSelector} from "react-redux";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import FormPage from "./FormPage"
 
 
 function App() {
   // i18n
-  let {t, i18n} = useTranslation();
+  let {i18n} = useTranslation();
 
   // state subscription to language
   const language = useSelector(state => state.language)
@@ -26,14 +31,16 @@ function App() {
   )
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {t("reactWelcome")}
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/submit'>
+          <div>This will be a submit page for displaying results</div>
+        </Route>
+        <Route path='/'>
+          <FormPage/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
