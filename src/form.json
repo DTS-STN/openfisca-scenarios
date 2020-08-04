@@ -1,0 +1,104 @@
+{
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "text",
+          "name": "age",
+          "title": "Please enter your age (in digits) on 2016-08-01"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_nz_citizen",
+          "title": "Are you a citizen of New Zealand?",
+          "choices": [
+            {
+              "value": "false",
+              "text": "No"
+            },
+            {
+              "value": "true",
+              "text": "Yes"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "social_security__is_ordinarily_resident_in_new_zealand",
+          "title": "Have you resided in New Zealand primarily for the last 2 years?",
+          "choices": [
+            {
+              "value": "false",
+              "text": "No"
+            },
+            {
+              "value": "true",
+              "text": "Yes"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "social_security__has_accomodation_costs",
+          "title": "Do you have accommodation costs?",
+          "choices": [
+            {
+              "value": "false",
+              "text": "No"
+            },
+            {
+              "value": "true",
+              "text": "Yes"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "eligible_for_social_housing",
+          "title": "Are you eligible for Social Housing?",
+          "choices": [
+            {
+              "value": "false",
+              "text": "No"
+            },
+            {
+              "value": "true",
+              "text": "Yes"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "accommodation_supplement__below_income_threshold",
+          "title": "Are you below the income threshold?",
+          "choices": [
+            {
+              "value": "false",
+              "text": "No"
+            },
+            {
+              "value": "true",
+              "text": "Yes"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "accommodation_supplement__below_cash_threshold",
+          "title": "Are you below the cash threshold?",
+          "choices": [
+            {
+              "value": "false",
+              "text": "No"
+            },
+            {
+              "value": "true",
+              "text": "Yes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
