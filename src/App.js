@@ -36,9 +36,7 @@ function App() {
         <Route path='/submit'>
           <div>This will be a submit page for displaying results</div>
         </Route>
-        <Route path='/'>
-          <FormPage/>
-        </Route>
+        <Route path='/' component={FormPage} />
       </Switch>
     </Router>
   );
