@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import 'survey-react/survey.css'
 import * as Survey from 'survey-react'
@@ -15,11 +15,11 @@ function FormPage() {
   }
 
   return (
-    <Survey.Survey 
+    !isComplete ? <Survey.Survey 
       json={FormJson}
       showCompletedPage={false}
       onComplete={onCompleteSubmit}
-    />
+    /> : <div> {JSON.stringify(formData)} </div>
   )
 }
 
